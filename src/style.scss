@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#canvas {
+  margin: auto;
+  display: block;
+  // border: 1px solid blue;
+  background-color: rgb(240, 240, 240);
+}
+
+.controls {
+  margin-top: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+
+  img {
+    box-sizing: border-box;
+    margin: 10px 10px;
+    background-color: white;
+    border: 0px solid white;
+
+    &:hover {
+      border-width: 1px;
+    }
+
+    &:active {
+      border-width: 2px;
+    }
+  }
+}
+
+.parameters {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  padding: 10px;
+  background-color: lightgray;
+  .parameter {
+    padding: 10px;
+    display: block;
+    background-color: white;
+    margin: 0px 20px;
+  
+    input {
+      border: 1px solid gray;
+      border-radius: 5px;
+      
+      text-align: right;
+      padding: 5px;
+      width: 100px;
+
+      &:focus {
+        border: 1px solid back;
+        outline: none;
+      }
+    }
+  }
+}
+
+.legend {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: lightblue;
+  margin: 20px;
+  p {
+    margin: 5px;
+  }
+}

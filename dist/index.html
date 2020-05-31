@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>beam-app</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div class="parameters">
+      
+      <span class="parameter">
+        <label for="P">P = </label>
+        <input type="number" id="parP">
+        <span class="unit">kN</span>
+      </span>
+      
+      <span class="parameter">
+        <label for="L">L = </label>
+        <input type="number" id="parL">
+        <span class="unit">m</span>
+      </span>
+      
+      <span class="parameter">
+        <label for="E">E = </label>
+        <input type="number" id="parE">
+        <span class="unit">GPa</span>
+      </span>
+      
+      <span class="parameter">
+        <label for="I">I = </label>
+        <input type="number" id="parI">
+        <span class="unit">m<sup>4</sup></span>
+      </span>
+      
+    </div>
+    </div>
+    <audio id="audio" src="ball-rolling.wav" type="audio/wav" loop></audio>
+    <div class="controls"></div>
+    <div class="legend">
+      <h2>Legenda:</h2>
+      <p>P - ciężar piłki lub siła pionowa wyrażona w kiloniutonach [kN]</p>
+      <p>L - długość przeprawy wyrażona w metrach [m]</p>
+      <p>E - sztywność materiału przeprawy lub moduł younga wyrażony w gigapaskalach [GPa]</p>
+      <p>I - sztywność przekroju przeprawy lub moment bezwładności na zginanie wyrażony w metrach do czwartej [m<sup>4</sup>]</p>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
